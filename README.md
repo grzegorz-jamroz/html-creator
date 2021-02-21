@@ -19,9 +19,7 @@ use HtmlCreator\PageBuilder;use HtmlCreator\PageFactory;
 
 $data = [
     'seo' => [],
-    'header' => [
-        'title' => 'Page title'
-    ],
+    'header' => 'Page title',
     'navbar' => [
         'items' => [
             [
