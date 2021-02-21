@@ -1,0 +1,16 @@
+{
+  "name": "grzegorz-jamroz/html-creator",
+  "description": "Library allow to generate html for React page readable by seo robots.",
+  "require": {
+    "php": ">=8"
+  },
+  "autoload": {
+    "psr-4": {
+      "HtmlCreator\\": ""
+    }
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.18",
+    "phpstan/phpstan": "^0.12.78"
+  }
+}
