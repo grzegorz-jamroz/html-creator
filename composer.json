@@ -2,7 +2,8 @@
   "name": "grzegorz-jamroz/html-creator",
   "description": "Library allow to generate html for React page readable by seo robots.",
   "require": {
-    "php": ">=8"
+    "php": ">=8",
+    "grzegorz-jamroz/plain-data-transformer": "^0.0.1"
   },
   "autoload": {
     "psr-4": {
