@@ -35,7 +35,7 @@ class NavItems implements ElementInterface
     public static function createFromArray(array $data): self
     {
         return new self(
-            (string) new ItemsFactory($data['items'] ??= [], NavItems::class),
+            (string) new ItemsFactory($data['items'] ??= [], NavItem::class),
         );
     }
 }
