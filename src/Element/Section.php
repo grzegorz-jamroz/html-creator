@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace HtmlCreator\Element;
 
 use HtmlCreator\AbstractElement;
+use HtmlCreator\ElementInterface;
 use HtmlCreator\Exception\ClassNotExists;
 use HtmlCreator\Exception\InvalidClass;
 

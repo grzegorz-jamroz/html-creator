@@ -87,4 +87,9 @@ class Helmet implements HelmetInterface
     {
         return $this->getHtml();
     }
+
+    public static function getHtmlRole(): string
+    {
+        return 'seo';
+    }
 }
