@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace HtmlCreator\Element;
 
-use HtmlCreator\AbstractElement;
+use HtmlCreator\ElementInterface;
 
-class Nav extends AbstractElement
+class Nav implements ElementInterface
 {
     public function __construct(
         private string $items,
@@ -36,5 +36,10 @@ class Nav extends AbstractElement
         return new self(
             (string) NavItems::createFromArray($data),
         );
+    }
+
+    public static function getHtmlRole(): string
+    {
+        return ElementInterface::NAVBAR;
     }
 }

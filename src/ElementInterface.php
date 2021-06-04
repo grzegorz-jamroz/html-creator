@@ -6,6 +6,11 @@ namespace HtmlCreator;
 
 interface ElementInterface extends Renderable, ArrayConstructable
 {
+    const HEADER = 'header';
+    const FOOTER = 'footer';
+    const NAVBAR  = 'navbar';
+    const MAIN  = 'main';
+
     /**
      * @return string ("header", "navbar", "main", "footer")
      */

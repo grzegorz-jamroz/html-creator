@@ -8,6 +8,6 @@ abstract class AbstractElement implements ElementInterface
 {
     public static function getHtmlRole(): string
     {
-        return 'main';
+        return ElementInterface::MAIN;
     }
 }

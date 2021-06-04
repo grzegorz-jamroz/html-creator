@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace HtmlCreator\Element;
 
-use HtmlCreator\AbstractElement;
+use HtmlCreator\ElementInterface;
 
-class Footer extends AbstractElement
+class Footer implements ElementInterface
 {
     public function __construct(
         private string $content,
@@ -36,5 +36,10 @@ class Footer extends AbstractElement
         return new self(
             (string) new Paragraph($data['text'] ??= ''),
         );
+    }
+
+    public static function getHtmlRole(): string
+    {
+        return ElementInterface::FOOTER;
     }
 }
