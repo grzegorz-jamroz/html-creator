@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace HtmlCreator\Element;
 
-use HtmlCreator\ComponentsFactory;
 use HtmlCreator\AbstractElement;
+use HtmlCreator\ComponentsFactory;
 use PlainDataTransformer\Transform;
 
 class Main extends AbstractElement

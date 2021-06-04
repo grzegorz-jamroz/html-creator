@@ -4,6 +4,6 @@ declare(strict_types=1);
 
 namespace HtmlCreator;
 
-interface ContentBuilderInterface extends ElementInterface
+interface ContentBuilderInterface extends Renderable, ArrayConstructable
 {
 }
