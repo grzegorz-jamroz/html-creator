@@ -9,5 +9,5 @@ interface ElementInterface extends Renderable, ArrayConstructable
     /**
      * @return string ("header", "navbar", "main", "footer")
      */
-    public function getHtmlRole(): string;
+    public static function getHtmlRole(): string;
 }

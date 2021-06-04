@@ -5,7 +5,7 @@ namespace HtmlCreator;
 
 abstract class AbstractElement implements ElementInterface
 {
-    public function getHtmlRole(): string
+    public static function getHtmlRole(): string
     {
         return 'main';
     }
