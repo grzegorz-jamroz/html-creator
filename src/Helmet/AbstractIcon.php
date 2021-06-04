@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace HtmlCreator\Helmet;
 
-use HtmlCreator\ElementInterface;
+use HtmlCreator\AbstractElement;
 
-abstract class AbstractIcon implements ElementInterface
+abstract class AbstractIcon extends AbstractElement
 {
     public function __construct(
         protected string $url,

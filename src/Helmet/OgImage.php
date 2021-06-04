@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace HtmlCreator\Helmet;
 
-use HtmlCreator\ElementInterface;
+use HtmlCreator\AbstractElement;
 
-class OgImage implements ElementInterface
+class OgImage extends AbstractElement
 {
     public function __construct(
         private string $url,

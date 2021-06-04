@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace HtmlCreator\Element;
 
-use HtmlCreator\ElementInterface;
+use HtmlCreator\AbstractElement;
 use HtmlCreator\Exception\ClassNotExists;
 use HtmlCreator\Exception\InvalidClass;
 
-class Section implements ElementInterface
+class Section extends AbstractElement
 {
     public function __construct(
         private string $content,

@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace HtmlCreator\Element;
 
-use HtmlCreator\ElementInterface;
+use HtmlCreator\AbstractElement;
 use HtmlCreator\ItemsFactory;
 
-class NavItems implements ElementInterface
+class NavItems extends AbstractElement
 {
     public function __construct(
         private string $items,

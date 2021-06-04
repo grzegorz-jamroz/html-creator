@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace HtmlCreator\Element;
 
-use HtmlCreator\ElementInterface;
+use HtmlCreator\AbstractElement;
 
-class Link implements ElementInterface
+class Link extends AbstractElement
 {
     public function __construct(
         private string $url,

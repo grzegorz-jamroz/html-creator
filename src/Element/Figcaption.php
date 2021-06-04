@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace HtmlCreator\Element;
 
-use HtmlCreator\ElementInterface;
+use HtmlCreator\AbstractElement;
 
-class Figcaption implements ElementInterface
+class Figcaption extends AbstractElement
 {
     public function __construct(
         private string $text,

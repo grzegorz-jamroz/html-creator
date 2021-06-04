@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace HtmlCreator\Element;
 
 use HtmlCreator\ComponentsFactory;
-use HtmlCreator\ElementInterface;
+use HtmlCreator\AbstractElement;
 use PlainDataTransformer\Transform;
 
-class Main implements ElementInterface
+class Main extends AbstractElement
 {
     public function __construct(
         private string $items,
