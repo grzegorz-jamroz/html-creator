@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace HtmlCreator\Element;
 
 use HtmlCreator\AbstractElement;
-use PlainDataTransformer\Transform;
 
 class FigureVideo extends AbstractElement
 {
@@ -37,10 +36,7 @@ class FigureVideo extends AbstractElement
     public static function createFromArray(array $data): self
     {
         return new self(
-            (string) new Link(
-                Transform::toString($data['url'] ??= ''),
-                (string) Video::createFromArray($data['video'] ??= []),
-            ),
+            (string) Video::createFromArray($data['video'] ??= []),
             (string) Figcaption::createFromArray($data['video'] ??= []),
         );
     }
