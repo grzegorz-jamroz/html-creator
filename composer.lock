@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "231f0fe80fb0063f2525906874ba8987",
+    "content-hash": "4a6749ea923556f70ae786a4fdb67d43",
     "packages": [
         {
             "name": "grzegorz-jamroz/plain-data-transformer",
-            "version": "0.0.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/grzegorz-jamroz/plain-data-transformer.git",
@@ -27,6 +27,7 @@
                 "friendsofphp/php-cs-fixer": "^2.18",
                 "phpstan/phpstan": "^0.12.78"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2205,7 +2206,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "grzegorz-jamroz/plain-data-transformer": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
