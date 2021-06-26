@@ -15,6 +15,10 @@ class Header extends AbstractElement
 
     public function getHtml(): string
     {
+        if ($this->title === '') {
+            return '';
+        }
+
         return <<<HTML
             <header>
                 <h1>$this->title</h1>
